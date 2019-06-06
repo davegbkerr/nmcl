@@ -1,0 +1,21 @@
+{
+  "name": "nissan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "transpile": "babel --plugins transform-remove-strict-mode src -d tmp",
+    "minify-button": "uglifyjs tmp/button.js -o dist/button.min.js",
+    "minify-data": "uglifyjs tmp/data-io.js -o dist/data-io.min.js",
+    "start": "npm run transpile && npm run minify-button && npm run minify-data"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
+    "uglify-js": "^3.6.0"
+  }
+}
