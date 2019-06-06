@@ -1,6 +1,6 @@
 # nmcl
 
-######Task 1
+#####Task 1
 
 **Source code:** ```src/button.js```
 
@@ -10,7 +10,7 @@
 
 ---
 
-######Task 2
+#####Task 2
 
 **Source code:** ```src/data-io.js```
 
